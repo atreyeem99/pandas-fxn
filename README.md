@@ -8,3 +8,11 @@
 ```
 describe(): Generate descriptive statistics of DataFrame.
 ```
+## head(): 
+```
+View the first n rows of the DataFrame.
+```
+## tail():
+```
+View the last n rows of the DataFrame.
+```
