@@ -16,3 +16,7 @@ View the first n rows of the DataFrame.
 ```
 View the last n rows of the DataFrame.
 ```
+## info(): 
+```
+Get concise summary of DataFrame including data types and missing values.
+```
