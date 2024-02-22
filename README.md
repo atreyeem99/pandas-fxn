@@ -20,3 +20,11 @@ View the last n rows of the DataFrame.
 ```
 Get concise summary of DataFrame including data types and missing values.
 ```
+## shape:
+```
+Return a tuple representing the dimensionality of the DataFrame.
+```
+## dtypes: 
+```
+Return the data types of each column.
+```
