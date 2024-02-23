@@ -28,3 +28,7 @@ Return a tuple representing the dimensionality of the DataFrame.
 ```
 Return the data types of each column.
 ```
+## columns: 
+```
+Return the column labels of the DataFrame.
+```
