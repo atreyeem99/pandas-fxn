@@ -32,3 +32,7 @@ Return the data types of each column.
 ```
 Return the column labels of the DataFrame.
 ```
+## index: 
+```
+Return the index (row labels) of the DataFrame.
+```
