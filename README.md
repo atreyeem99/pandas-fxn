@@ -36,3 +36,7 @@ Return the column labels of the DataFrame.
 ```
 Return the index (row labels) of the DataFrame.
 ```
+# I/O Functions:
+
+  ##  read_csv(): Read a CSV file into a DataFrame.
+  ## read_excel(): Read an Excel file into a DataFrame.
