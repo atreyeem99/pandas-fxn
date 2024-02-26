@@ -40,3 +40,8 @@ Return the index (row labels) of the DataFrame.
 
   ##  read_csv(): Read a CSV file into a DataFrame.
   ## read_excel(): Read an Excel file into a DataFrame.
+
+# Data Manipulation:
+
+    ## merge(): Merge DataFrame objects by performing a database-style join operation.
+    ## concat(): Concatenate pandas objects along a particular axis.
