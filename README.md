@@ -45,3 +45,4 @@ Return the index (row labels) of the DataFrame.
 
     ## merge(): Merge DataFrame objects by performing a database-style join operation.
     ## concat(): Concatenate pandas objects along a particular axis.
+    ## drop(): Drop specified labels from rows or columns.
