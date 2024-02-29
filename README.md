@@ -48,3 +48,4 @@ Return the index (row labels) of the DataFrame.
     ## drop(): Drop specified labels from rows or columns.
     ## groupby(): Group DataFrame using a mapper or by a Series of columns.
     ## pivot_table(): Create a spreadsheet-style pivot table as a DataFrame 
+    ## stack() and unstack(): Reshape a DataFrame by pivoting the index labels
