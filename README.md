@@ -40,6 +40,8 @@ Return the index (row labels) of the DataFrame.
 
   ##  read_csv(): Read a CSV file into a DataFrame.
   ## read_excel(): Read an Excel file into a DataFrame.
+  ## at[]: Access a single value for a row/column label pair.
+  ## iat[]: Access a single value for a row/column pair by integer position.
 
 # Data Manipulation:
 
