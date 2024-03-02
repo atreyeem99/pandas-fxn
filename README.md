@@ -51,3 +51,7 @@ Return the index (row labels) of the DataFrame.
     ## groupby(): Group DataFrame using a mapper or by a Series of columns.
     ## pivot_table(): Create a spreadsheet-style pivot table as a DataFrame 
     ## stack() and unstack(): Reshape a DataFrame by pivoting the index labels
+Data Cleaning:
+
+    fillna(): Fill missing values with specified methods.
+    dropna(): Remove missing values from DataFrame.
