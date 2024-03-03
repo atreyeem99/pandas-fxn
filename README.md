@@ -55,3 +55,4 @@ Data Cleaning:
 
     fillna(): Fill missing values with specified methods.
     dropna(): Remove missing values from DataFrame.
+    eplace(): Replace values in DataFrame with other values.
