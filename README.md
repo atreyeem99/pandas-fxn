@@ -59,3 +59,4 @@ Data Cleaning:
 Data Analysis:
 
     value_counts(): Count distinct values in a Series.
+    unique(): Return unique values in a Series.
