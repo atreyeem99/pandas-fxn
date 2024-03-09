@@ -62,3 +62,5 @@ Data Analysis:
     value_counts(): Count distinct values in a Series.
     unique(): Return unique values in a Series.
     nunique(): Return number of unique elements in a Series.
+to_csv(): Write a DataFrame to a CSV file.
+to_excel(): Write a DataFrame to an Excel file.
