@@ -43,6 +43,7 @@ Return the index (row labels) of the DataFrame.
   ## at[]: Access a single value for a row/column label pair.
   ## iat[]: Access a single value for a row/column pair by integer position.
   ## query(): Filter rows from a DataFrame that meet a specified condition.
+  to_excel(): Write a DataFrame to an Excel file.
 
 # Data Manipulation:
 
