@@ -65,3 +65,14 @@ Data Analysis:
     nunique(): Return number of unique elements in a Series.
 to_csv(): Write a DataFrame to a CSV file.
 to_excel(): Write a DataFrame to an Excel file.
+
+
+```
+import pandas as pd
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv('your_file.csv')
+
+# Print the second column
+print(df.iloc[:, 1])
+```
