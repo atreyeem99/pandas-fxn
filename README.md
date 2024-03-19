@@ -76,3 +76,51 @@ df = pd.read_csv('your_file.csv')
 # Print the second column
 print(df.iloc[:, 1])
 ```
+# EXAMPLE 
+```
+import pandas as pd
+
+# Creating a DataFrame from a dictionary
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [25, 30, 35, 40],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+}
+
+df = pd.DataFrame(data)
+print("Original DataFrame:")
+print(df)
+print()
+
+# Basic DataFrame operations
+print("Shape of DataFrame:")
+print(df.shape)  # Shape of the DataFrame (rows, columns)
+print()
+
+print("Columns of DataFrame:")
+print(df.columns)  # Columns of the DataFrame
+print()
+
+print("Data types of DataFrame:")
+print(df.dtypes)  # Data types of each column
+print()
+
+print("Descriptive statistics of numeric columns:")
+print(df.describe())  # Summary statistics of numeric columns
+print()
+
+# Accessing specific columns
+print("Accessing 'Name' column:")
+print(df['Name'])
+print()
+
+# Adding a new column
+df['Gender'] = ['Female', 'Male', 'Male', 'Male']
+print("DataFrame after adding 'Gender' column:")
+print(df)
+print()
+
+# Filtering data based on conditions
+print("Filtering data where Age > 30:")
+print(df[df['Age'] > 30])
+```
