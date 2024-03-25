@@ -124,3 +124,37 @@ print()
 print("Filtering data where Age > 30:")
 print(df[df['Age'] > 30])
 ```
+```
+import pandas as pd
+
+# Creating a DataFrame from a list of lists
+data = [
+    ['John', 28, 'New York'],
+    ['Anna', 35, 'Paris'],
+    ['Peter', 45, 'London'],
+    ['Linda', 30, 'Sydney']
+]
+
+# Define column names
+columns = ['Name', 'Age', 'City']
+
+# Creating the DataFrame
+df = pd.DataFrame(data, columns=columns)
+
+# Displaying the DataFrame
+print("Original DataFrame:")
+print(df)
+
+# Accessing specific columns
+print("\nAccessing 'Name' column:")
+print(df['Name'])
+
+# Accessing specific rows
+print("\nAccessing the first row:")
+print(df.iloc[0])
+
+# Accessing specific elements
+print("\nAccessing element at row 2, column 'Age':")
+print(df.at[1, 'Age'])
+```
+#     Creating a DataFrame from a list of lists. Defining column names explicitly . Accessing specific columns, rows, and elements of the DataFrame.
