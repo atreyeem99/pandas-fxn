@@ -1,4 +1,10 @@
 # pandas-fxn
+
+## Why is pandas helpful:
+```
+Data manipulation and analysis: Pandas provides powerful data structures and tools for manipulating and analyzing structured data. Its DataFrame object allows you to easily handle data with rows and columns, similar to a spreadsheet or a SQL table. You can perform various operations such as filtering, sorting, grouping, joining, and reshaping data efficiently.
+```
+
 ## Data Structures:
 ```
     Series: One-dimensional labeled array.
