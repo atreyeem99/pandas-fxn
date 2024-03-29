@@ -4,7 +4,9 @@
 ```
 Data manipulation and analysis: Pandas provides powerful data structures and tools for manipulating and analyzing structured data. Its DataFrame object allows you to easily handle data with rows and columns, similar to a spreadsheet or a SQL table. You can perform various operations such as filtering, sorting, grouping, joining, and reshaping data efficiently.
 ```
-
+```
+Data cleaning and preprocessing: Data often comes in messy, incomplete, or inconsistent formats. Pandas provides numerous functions for data cleaning and preprocessing, including handling missing values, converting data types, removing duplicates, and dealing with outliers. These operations are crucial for preparing data for further analysis or machine learning tasks.
+```
 ## Data Structures:
 ```
     Series: One-dimensional labeled array.
