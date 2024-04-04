@@ -166,3 +166,20 @@ print("\nAccessing element at row 2, column 'Age':")
 print(df.at[1, 'Age'])
 ```
 #     Creating a DataFrame from a list of lists. Defining column names explicitly . Accessing specific columns, rows, and elements of the DataFrame.
+# set a range for a data frame and print only those which satisfies it
+```
+import pandas as pd
+
+# Sample DataFrame
+df = pd.DataFrame({'A': [10, 20, 30, 40, 50]})
+
+# Define the range
+lower_bound = 15
+upper_bound = 35
+
+# Filter the DataFrame based on the range
+filtered_df = df[(df['A'] >= lower_bound) & (df['A'] <= upper_bound)]
+
+# Print the filtered DataFrame
+print(filtered_df)
+```
