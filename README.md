@@ -211,3 +211,84 @@ input_csv_file = 'tda_results.csv'
 output_csv_file = 'score_tda.csv'
 process_csv(input_csv_file, output_csv_file)
 ```
+#Example
+import pandas as pd
+
+
+# =========================================================
+# 📌 Step 1: Read Input Files
+# =========================================================
+def load_data(file_c00, file_vdft):
+    """
+    Load CSV files containing energy values.
+    """
+    c00 = pd.read_csv(file_c00)
+    v_dft = pd.read_csv(file_vdft)
+    return c00, v_dft
+
+
+# =========================================================
+# 📌 Step 2: Merge Data on Folder Name
+# =========================================================
+def merge_data(c00, v_dft):
+    """
+    Merge datasets using the first column (folder names).
+    """
+    merged = pd.merge(c00, v_dft, on=c00.columns[0], suffixes=("_c", "_v"))
+    return merged
+
+
+# =========================================================
+# 📌 Step 3: Perform Calculations
+# =========================================================
+def compute_energy_differences(df):
+    """
+    Compute corrected S1, T1, and S1-T1 values.
+    """
+    df["S1_new"] = df.iloc[:, 1] - df.iloc[:, 3]
+    df["T1_new"] = df.iloc[:, 2] - df.iloc[:, 4]
+    df["S1_minus_T1"] = df["S1_new"] - df["T1_new"]
+
+    return df.round(5)
+
+
+# =========================================================
+# 📌 Step 4: Extract Final Output
+# =========================================================
+def format_output(df):
+    """
+    Keep only relevant columns for output.
+    """
+    output = df[[df.columns[0], "S1_new", "T1_new", "S1_minus_T1"]]
+    return output
+
+
+# =========================================================
+# 📌 Step 5: Save Results
+# =========================================================
+def save_output(df, filename="subtracted_values.csv"):
+    """
+    Save the results to a CSV file.
+    """
+    df.to_csv(filename, index=False)
+    print(f"✅ Results saved to: {filename}")
+
+
+# =========================================================
+# 🚀 Main Execution
+# =========================================================
+if __name__ == "__main__":
+    # Input files
+    file_c00 = "00_energies_eV_2.csv"
+    file_vdft = "vertical_dft.csv"
+
+    # Workflow
+    c00, v_dft = load_data(file_c00, file_vdft)
+    merged = merge_data(c00, v_dft)
+    computed = compute_energy_differences(merged)
+    output = format_output(computed)
+
+    # Save and display
+    save_output(output)
+    print("\n🔹 Final Output Preview:\n")
+    print(output)
